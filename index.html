@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Mahal | Your Time, Your Style</title>
+<meta name="description" content="Time Mahal - Stylish and affordable watches for every style.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#080808;color:#fff;line-height:1.6}
+:root{--gold:#d4af37;--gold-light:#f1d477;--gray:#b8b8b8}
+nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(8,8,8,.94);border-bottom:1px solid rgba(212,175,55,.2);backdrop-filter:blur(10px)}
+.nav-container{max-width:1100px;margin:auto;padding:18px 25px;display:flex;align-items:center;justify-content:space-between}
+.logo{color:var(--gold);font-size:25px;font-weight:bold;letter-spacing:2px}
+.nav-links{display:flex;gap:28px;list-style:none}.nav-links a{color:#fff;text-decoration:none;font-size:14px;transition:.3s}.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 20px 70px;background:radial-gradient(circle at center,#241f0e 0%,#080808 45%,#000 100%)}
+.hero-content{max-width:800px}.hero small{color:var(--gold);text-transform:uppercase;letter-spacing:4px;font-size:13px}
+.hero h1{font-size:clamp(55px,10vw,105px);margin:12px 0;letter-spacing:5px;background:linear-gradient(90deg,#b88a18,#f7df85,#c49a27);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero h2{font-size:24px;font-weight:400;margin-bottom:18px}.hero p{max-width:600px;margin:auto;color:var(--gray);font-size:17px}
+.buttons{margin-top:30px}.btn{display:inline-block;padding:13px 28px;margin:6px;border-radius:30px;text-decoration:none;font-weight:bold;transition:.3s}
+.btn-gold{background:var(--gold);color:#000}.btn-gold:hover{background:var(--gold-light);transform:translateY(-3px)}
+.btn-outline{border:1px solid var(--gold);color:var(--gold)}.btn-outline:hover{background:var(--gold);color:#000}
+section{padding:90px 20px}.container{max-width:1050px;margin:auto}
+.section-title{text-align:center;margin-bottom:45px}.section-title span{color:var(--gold);font-size:13px;text-transform:uppercase;letter-spacing:3px}.section-title h2{font-size:38px;margin-top:8px}
+.about{background:#0d0d0d}.about-text{max-width:750px;margin:auto;text-align:center;color:var(--gray);font-size:17px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.feature{background:#111;padding:30px 20px;text-align:center;border:1px solid #222;border-radius:12px;transition:.3s}
+.feature:hover{transform:translateY(-6px);border-color:var(--gold)}.feature .icon{font-size:35px;margin-bottom:15px}.feature h3{color:var(--gold);margin-bottom:8px}.feature p{color:var(--gray);font-size:14px}
+.cta{text-align:center;background:linear-gradient(135deg,#17140a,#080808)}.cta h2{font-size:40px;margin-bottom:12px}.cta p{color:var(--gray);margin-bottom:20px}
+footer{background:#050505;border-top:1px solid #222;text-align:center;padding:30px 20px}footer .footer-logo{color:var(--gold);font-size:23px;font-weight:bold;letter-spacing:2px}footer p{color:#777;margin-top:8px;font-size:13px}
+@media(max-width:700px){.nav-links{display:none}.features{grid-template-columns:1fr}.hero h2{font-size:20px}.section-title h2{font-size:30px}.cta h2{font-size:30px}}
+</style>
+</head>
+<body>
+<nav><div class="nav-container"><div class="logo">TIME MAHAL</div><ul class="nav-links"><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#why">Why Us</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<section class="hero" id="home"><div class="hero-content">
+<small>Premium Online Watch Brand</small><h1>TIME MAHAL</h1><h2>Your Time, Your Style.</h2>
+<p>Discover stylish, affordable and modern watches designed to complement your everyday look.</p>
+<div class="buttons"><a href="#contact" class="btn btn-gold">Shop Now</a><a href="#about" class="btn btn-outline">Explore</a></div>
+</div></section>
+
+<section class="about" id="about"><div class="container"><div class="section-title"><span>About Us</span><h2>Time That Defines You</h2></div>
+<p class="about-text">Time Mahal is an online watch brand focused on bringing stylish and affordable watches to customers. From everyday designs to elegant styles, we help you find a watch that matches your personality, lifestyle and budget.</p>
+</div></section>
+
+<section id="why"><div class="container"><div class="section-title"><span>Why Time Mahal</span><h2>Made For Your Style</h2></div>
+<div class="features">
+<div class="feature"><div class="icon">⌚</div><h3>Stylish Designs</h3><p>Modern and elegant watches for different styles and occasions.</p></div>
+<div class="feature"><div class="icon">💎</div><h3>Affordable Quality</h3><p>Stylish watches at prices designed to offer excellent value.</p></div>
+<div class="feature"><div class="icon">📦</div><h3>Easy Delivery</h3><p>Convenient online ordering with delivery options for our customers.</p></div>
+</div></div></section>
+
+<section class="cta" id="contact"><div class="container"><h2>Find Your Perfect Time</h2><p>Follow Time Mahal and discover our latest watch collections.</p>
+<a href="https://wa.me/923169779994" target="_blank" class="btn btn-gold" id="whatsappBtn">Order on WhatsApp</a></div></section>
+
+<footer><div class="footer-logo">TIME MAHAL</div><p>Your Time, Your Style.</p><p>© <span id="year"></span> Time Mahal. All Rights Reserved.</p></footer>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+document.getElementById("whatsappBtn").addEventListener("click",()=>console.log("Time Mahal WhatsApp button clicked"));
+</script>
+</body>
+</html>
